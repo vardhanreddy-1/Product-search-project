@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wholesale Business - Product Search</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>Wholesale Business</h1>
+    <form id="searchForm" action="search.php" method="post" onsubmit="return validateForm()">
+      <label for="productName">Product Name:</label>
+      <input type="text" id="productName" name="productName" required>
+      
+      <label for="category">Category:</label>
+      <select id="category" name="category">
+        <option value="all">All Categories</option>
+        <!-- Add dynamically populated category options from your database -->
+
+      </select>
+      
+      <input type="submit" value="Search">
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
